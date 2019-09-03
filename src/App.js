@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import ReactDOM from 'react-dom';
+import entry from './img/entry.png';
 import './App.css';
+import Main from './main/main.js';
+import routes from './router.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  componentDidMount() {
+    setTimeout(() => {
+      ReactDOM.render(routes, document.getElementById('root'));
+    }, 1000);
+  }
+
+  render() {
+    return (
+      <img src={entry} className="App-logo" logo="entry" /> 
+    );
+  }
 }
 
 export default App;

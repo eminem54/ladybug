@@ -1,0 +1,14 @@
+.menubar{
+    min-height: 22.4vh;
+    background-color: rgb(182, 182, 243);
+}
+.top-menu-bar{
+    display:flex;
+    justify-content: space-between;
+    min-width: 100vw;
+    min-height: 12.8vh;
+}
+.bottom-menu-bar{
+    display:flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,11 @@
+.must-see-container{
+    min-width: 100vw;
+    min-height: 35.2vh;
+    background-color: rgb(131, 103, 103);
+}
+
+.must-see-itembox{
+    background-color: rgb(224, 224, 224);
+    min-width: 100vw;
+    min-height: 30vh;
+}
